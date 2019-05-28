@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono:400,700');
+
+:root {
+  --secondary-gradient-color: #157BFF;
+  --primary-gradient-color: #0E57FF;
+  /* old colors: linear-gradient(to top, #5B3ADC 0%, #305AED 100%) */
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+b {
+    font-weight: 700 !important;
+}
+
+.patternbackground {
+	background: url("img/pattern.svg") repeat fixed 0% 0%, rgba(0, 0, 0, 0) linear-gradient(to top, var(--primary-gradient-color) 0%, var(--secondary-gradient-color) 100%) repeat fixed 0% 0%;
+}
+
+#header {
+    padding: 50px 0;
+    text-align: center;
+    color: #fdfdfd;
+}
+
+#header img {
+    margin: 30px 0;
+    display: inline-block;
+    padding: 0px 15px;
+    width: 250px;
+    max-width: 50vw;
+}
+
+#header h2 {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+#header .right, #header .left {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 15px 0;
+    vertical-align: top;
+}
+
+
+#header .left {
+    text-align: center;
+}
+
+#header .left #info {
+    display: inline-block;
+    text-align: left;
+}
+
+#header .left #info h2:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+#header .super-title {
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#header .right {
+    margin-top: 0px;
+}
+
+#header .right #desc {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+
+#header .left #info {
+    text-align: center;
+}
+
+.info-container {
+    padding: 15px;
+}
+
+@media screen and (max-width:800px) {
+    #header .right, #header .left {
+        width: 400px;
+        max-width: 90vw;
+    }
+}
+
+a.white-button {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    background-color: #fdfdfd;
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: 250px;
+    margin: 25px auto;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/*#header*/ a.white-button:hover { /*disable header so all a.white-buttons do this*/
+    width: 300px;
+}
+
+a.button {
+    display: block;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: 200px;
+    margin: 25px auto;
+    transition: 0.2s;
+    background: linear-gradient(to right, var(--primary-gradient-color) 0%, var(--secondary-gradient-color) 100%);
+    color: white;
+}
+
+
+#links {
+    background-color: #0E57FF;
+    padding: 20px 40px;
+    display: inline-block;
+    border-radius: 3px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    
+    webkit-box-shadow: -4px -4px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -4px -4px 10px 0px rgba(0,0,0,0.25);
+    box-shadow: -4px -4px 10px 0px rgba(0,0,0,0.25);
+}
+
+#links a {
+    color: white;
+    padding: 5px 10px;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+
+
+#hackathon {
+    text-align: center;
+    padding: 90px 0;
+}
+
+#hackathon h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+#hackathon p.desc {
+    line-height: 1.75rem;
+    font-size: 1.05rem;
+    width: 750px;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+
+.card {
+    width: 700px;
+    max-width: 80vw;
+    padding: 25px 20px;
+    padding-bottom: 50px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #222;
+    position:relative;
+    margin: 20px auto;
+    background-color: white;
+}
+
+#hackathon .card span {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #777;
+}
+
+#hackathon .card span a {
+    color: #777;
+    transition: 0.2s;
+}
+
+#hackathon .card span a:hover {
+    color: #111;
+}
+
+#stats {
+    padding: 100px 0;
+    background-color: #464AE5;
+    color: #fdfdfd;
+    /*background: url("img/pattern.svg") repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(to top, #5B3ADC 0%, #305AED 100%) repeat scroll 0% 0%;*/
+}
+
+#stats .inner {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#stats h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stat {
+    display: inline-block;
+    width: 50%;
+    padding: 30px 0;
+}
+
+.stat h3 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.stat .subtitle {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-top: dashed rgba(255, 255, 255, 0.7) 2px;
+    display: inline-block;
+}
+
+#faq {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#faq h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+#faq .card {
+    padding: 25px 20px;
+    margin: 20px auto;
+    text-align: left;
+    margin-bottom: 35px;
+    background-color: white;
+}
+
+#faq .card h4 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#faq p.ask {
+    padding: 20px;
+}
+
+#faq p.ask a {
+    color: #777;
+    transition: 0.2s;
+}
+
+#faq p.ask a:hover {
+    color: #111;
+}
+
+#schedule {
+    padding: 150px 0;
+    background-color: #464AE5;
+    color: #fdfdfd;
+    /*background: url("img/pattern.svg") repeat scroll 0% 0%, rgba(0, 0, 0, 0) linear-gradient(to top, #5B3ADC 0%, #305AED 100%) repeat scroll 0% 0%;*/
+    position: relative;
+}
+
+#schedule h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+}
+
+#schedule h3.title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 40px auto;
+    margin-top: 80px;
+}
+
+#schedule .container {
+    margin: 0 auto;
+    display: block;
+    width: 66vw;
+    min-width: 600px;
+    text-align: center;
+}
+
+#schedule .sleft, #schedule .sright {
+    width: 600px;
+    max-width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#schedule .sleft h4, #schedule .sright h4 {
+    font-weight: 700;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.95);
+    border-bottom: dashed rgba(255, 255, 255, 0.7) 2px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+#schedule .sleft span, #schedule .sright span {
+    font-family: "Share Tech Mono";
+    font-weight: regular !important;
+    letter-spacing: -2px;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+   .stat {
+       padding: 25px !important;
+   }
+}
+
+@media screen and (max-width: 650px) {
+    #schedule .sleft, #schedule .sright {
+        width: 45%;
+        min-width: 100px;
+    }
+    #schedule .container {
+        width: 90%;
+        min-width: 100px;
+    }
+}
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 30px;
+}
+
+.person {
+    width: 500px;
+    max-width: 80vw;
+    padding: 25px 20px;
+    padding-bottom: 50px;
+    border: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    color: #222;
+    text-align: left;
+    margin: 20px 20px;
+    position: relative;
+    height: 150px;
+    display: inline-block;
+}
+
+.person img {
+    /*height: 50px;*/
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.person .info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+}
+
+.workshops {
+    text-align: center;
+}
+
+.workshop {
+    text-align: left;
+    width: 90vw;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 40px;
+    position: relative;
+    
+}
+
+.workshop h3 {
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 50px;
+    max-width: 78%;
+}
+
+.workshop i {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.workshop p {
+    line-height: 1.5rem;
+}
+
+.workshop .see-more {
+    background: linear-gradient(to bottom right, var(--primary-gradient-color) 0%, var(--secondary-gradient-color) 100%);
+    color: #fefefe;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    
+    position: absolute;
+    top: 22.5px;
+    right: 30px;
+    padding: 10px;
+    cursor: pointer;
+    transform: none;
+    width: 100px;
+    text-align: center;
+}
+
+.horiz-spacer {
+    color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
+
+.novice {
+    color: rgb(49, 175, 7);
+}
+
+.intermediate {
+    color: rgb(242, 143, 4);
+}
+
+.advanced {
+    color: rgb(239, 51, 14);
+}
+
+@media screen and (max-width:500px) {
+    .hide-if {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #links a {
+        margin: 0;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
