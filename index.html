@@ -14,7 +14,8 @@
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lby8NkgPMz">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=Lby8NkgPMz">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=Lby8NkgPMz">
-		<link rel="manifest" href="/site.webmanifest?v=Lby8NkgPMz">
+        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+        <link rel="manifest" href="/site.webmanifest?v=Lby8NkgPMz">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg?v=Lby8NkgPMz" color="#fc7c04">
 		<link rel="shortcut icon" href="/favicon.ico?v=Lby8NkgPMz">
 		<meta name="msapplication-TileColor" content="#fc7c04">
@@ -59,8 +60,30 @@
             </div>
             
         </div>
-        
 
+        <!-- Noscript content for added SEO -->
+        <div style="display: flex; justify-content: center; align-items: center">
+            <noscript><a href="https://www.eventbrite.com/e/hackstl-registration-61588245099" rel="noopener noreferrer" target="_blank"/></noscript>
+            <!-- You can customize this button any way you like -->
+            <button id="eventbrite-widget-modal-trigger-61588245099" type="button" class="round-btn">Register</button>
+            <noscript></a>Buy Tickets on Eventbrite</noscript>
+
+            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    widgetType: 'checkout',
+                    eventId: '61588245099',
+                    modal: true,
+                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-61588245099',
+                    onOrderComplete: exampleCallback
+                });
+            </script>
+        </div>
         
         <div id="hackathon" style="padding-top: 1vh;">
             <h2>What Is HackSTL?</h2>
@@ -361,49 +384,53 @@
         
         <div id="contact">
             <h2>Contact Information</h2> <!-- obfuscation method inspired by https://perishablepress.com/best-method-for-email-obfuscation/ -->
-            <div class="person person-rep" id="Abhi">
-                <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
-                <div class="info">
-                    <h3>Abhi Thosar</h3>
-                    <a href="mailto:athosar1452@gmail.com">athosar1452@gmail.com</a>
+            <div class="row">
+                <div class="person" id="Abhi">
+                    <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
+                    <div class="info">
+                        <h3>Abhi Thosar</h3>
+                        <a href="mailto:athosar1452@gmail.com">athosar1452@gmail.com</a>
+                    </div>
                 </div>
-            </div>
-            <div class="person" id="Rob">
+                <div class="person" id="Rob">
                     <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
                     <div class="info">
                         <h3>Rob Budak</h3>
                         <a href="mailto:computerguy440@gmail.com">computerguy440@gmail.com</a>
                     </div>
                 </div>
-            </div>
-            <div class="person" id="Armaan">
-                <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
-                <div class="info">
-                    <h3>Armaan Gupta</h3>
-                    <a href="mailto:guppythegod@kreative.im">guppythegod@kreative.im</a>
+                <div class="person" id="Pavan">
+                    <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
+                    <div class="info">
+                        <h3>Pavan Pandurangi</h3>
+                        <a href="mailto:pandurangi1381@students.d211.org">pandurangi1381@students.d211.org</a>
+                    </div>
                 </div>
             </div>
-            <div class="person" id="Saagar">
-                <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
-                <div class="info">
-                    <h3>Saagar Patel</h3>
-                    <a href="mailto:patel5210@students.d211.org">patel5210@students.d211.org</a>
+            <div class="row">
+                <div class="person" id="Saagar">
+                    <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
+                    <div class="info">
+                        <h3>Saagar Patel</h3>
+                        <a href="mailto:patel5210@students.d211.org">patel5210@students.d211.org</a>
+                    </div>
+                </div>
+                <div class="person" id="Armaan">
+                    <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
+                    <div class="info">
+                        <h3>Armaan Gupta</h3>
+                        <a href="mailto:guppythegod@kreative.im">guppythegod@kreative.im</a>
+                    </div>
+                </div>
+                <div class="person" id="Arnav">
+                    <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
+                    <div class="info">
+                        <h3>Arnav Batta</h3>
+                        <a href="mailto:arnavbatta29@gmail.com">arnavbatta29@gmail.com</a>
+                    </div>
                 </div>
             </div>
-            <div class="person" id="Pavan">
-                <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
-                <div class="info">
-                    <h3>Pavan Pandurangi</h3>
-                    <a href="mailto:pandurangi1381@students.d211.org">pandurangi1381@students.d211.org</a>
-                </div>
-            </div>
-            <div class="person" id="Arnav">
-                <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
-                <div class="info">
-                    <h3>Arnav Batta</h3>
-                    <a href="mailto:arnavbatta29@gmail.com">arnavbatta29@gmail.com</a>
-                </div>
-            </div>
+        </div>
 
 
 
@@ -419,5 +446,8 @@
     
       gtag('config', 'UA-58043933-5');
     </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
