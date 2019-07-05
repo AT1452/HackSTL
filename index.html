@@ -8,7 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet">
         
         <!-- From https://realfavicongenerator.net/ -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lby8NkgPMz">
@@ -34,80 +35,79 @@
 			<!--<a href="./projects">Participant Projects</a>-->
 			<!--<a href="./photos">Photos</a>-->
 		</nav>
+
+        <section class="section1">
         
-        <script src="https://use.fontawesome.com/d0bc9af035.js"></script>
-        <script src="index.js"></script>
-
-        
-        <div class="patternbackground" id="header">
-            <img id="logo" src="hack-stl-logo_white.svg">
+            <div id="header">
+                <img id="logo" src="hack-stl-logo_white.svg">
 
 
-            
-            <div class="left">
-                <div id="info">
-                    
-                    <div class="info-container" style="display: inline-block;">
-                        <p class="super-title">When</p>
-                        <h2>August 9th and 10th</h2>
-                    </div>
-                    
-                    <div class="info-container" style="display: inline-block">
-                        <p class="super-title">Where</p>
-                        <h2>Schaumburg Library</h2>
+
+                <div class="left">
+                    <div id="info">
+
+                        <div class="info-container" style="display: inline-block;">
+                            <p class="super-title">When</p>
+                            <h2>August 9th and 10th</h2>
+                        </div>
+
+                        <div class="info-container" style="display: inline-block">
+                            <p class="super-title">Where</p>
+                            <h2>Schaumburg Library</h2>
+                        </div>
                     </div>
                 </div>
+
+                <div style="display: flex; justify-content: center; align-items: center">
+                    <noscript><a href="https://www.eventbrite.com/e/hackstl-registration-61588245099" rel="noopener noreferrer" target="_blank"/></noscript>
+                    <!-- You can customize this button any way you like -->
+                    <button id="eventbrite-widget-modal-trigger-61588245099" type="button" class="round-btn">Register</button>
+                    <noscript></a>Buy Tickets on Eventbrite</noscript>
+
+                    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+                    <script type="text/javascript">
+                        var exampleCallback = function() {
+                            console.log('Order complete!');
+                        };
+
+                        window.EBWidgets.createWidget({
+                            widgetType: 'checkout',
+                            eventId: '61588245099',
+                            modal: true,
+                            modalTriggerElementId: 'eventbrite-widget-modal-trigger-61588245099',
+                            onOrderComplete: exampleCallback
+                        });
+                    </script>
+                </div>
+
             </div>
-            
-        </div>
 
-        <!-- Noscript content for added SEO -->
-        <div style="display: flex; justify-content: center; align-items: center">
-            <noscript><a href="https://www.eventbrite.com/e/hackstl-registration-61588245099" rel="noopener noreferrer" target="_blank"/></noscript>
-            <!-- You can customize this button any way you like -->
-            <button id="eventbrite-widget-modal-trigger-61588245099" type="button" class="round-btn">Register</button>
-            <noscript></a>Buy Tickets on Eventbrite</noscript>
+            <!-- Noscript content for added SEO -->
 
-            <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-
-            <script type="text/javascript">
-                var exampleCallback = function() {
-                    console.log('Order complete!');
-                };
-
-                window.EBWidgets.createWidget({
-                    widgetType: 'checkout',
-                    eventId: '61588245099',
-                    modal: true,
-                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-61588245099',
-                    onOrderComplete: exampleCallback
-                });
-            </script>
-        </div>
+            <div id="hackathon" style="padding-top: 1vh;">
+                <h2>What Is HackSTL?</h2>
+                <div class="right">
+                    <p id="desc">Schaumburg Library's first ever hackathon! <br><br>
+                        HackSTL encourages hackers to come together for 21 hours of coding, designing, and fun! <br>
+                        We will provide you with the resources, mentors, and food to create some amazing projects. <br>
+                        HackSTL is open to hackers of all levels: no matter if you're a beginner or a veteran, it's a weekend not to miss!</p>
+                </div>
+                <!--<div class="card">-->
+                    <!--<h3 style="font-weight: bold;font-size: 2rem;text-align:center;margin:10px 0;">hack&bull;a&bull;thon</h3>-->
+                    <!--<p>An event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming.</p>-->
+                    <!--<span>From <a href="https://www.google.com/search?q=define+hackathon" target="_blank">Google</a></span>-->
+                <!--</div>-->
+            </div>
+        </section>
         
-        <div id="hackathon" style="padding-top: 1vh;">
-            <h2>What Is HackSTL?</h2>
-            <div class="right">
-                <p id="desc">Schaumburg Library's first ever hackathon! <br><br>
-                    HackSTL encourages hackers to come together for 21 hours of coding, designing, and fun! <br>
-                    We will provide you with the resources, mentors, and food to create some amazing projects. <br>
-                    HackSTL is open to hackers of all levels: no matter if you're a beginner or a veteran, it's a weekend not to miss!</p>
-            </div>
-            <!--<div class="card">-->
-                <!--<h3 style="font-weight: bold;font-size: 2rem;text-align:center;margin:10px 0;">hack&bull;a&bull;thon</h3>-->
-                <!--<p>An event, typically lasting several days, in which a large number of people meet to engage in collaborative computer programming.</p>-->
-                <!--<span>From <a href="https://www.google.com/search?q=define+hackathon" target="_blank">Google</a></span>-->
-            <!--</div>-->
-        </div>
-        
-        <div class="patternbackground" id="schedule">
-            <h2 id="schedule">Schedule</h2>
-
-            <div style="height: 100vh; display: flex; justify-content: center;">
-                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOUEaFGaT3anNAbkoC5IcJNzdslPmo5a7S6BjW3Vf4Ibwpi3SqMCiaroTvdrdlZeresyF6tOX6rdMr/pubhtml?widget=true&amp;headers=false" width="80%"></iframe>
+        <section class="section2">
+            <div style="display: flex; justify-content: center;">
+                <img src="./img/HackSTLSchedule.png" />
+                <!--<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOUEaFGaT3anNAbkoC5IcJNzdslPmo5a7S6BjW3Vf4Ibwpi3SqMCiaroTvdrdlZeresyF6tOX6rdMr/pubhtml?widget=true&amp;headers=false" width="80%"></iframe>-->
             </div>
 
-            <center><p class="desc">See button below to expand a detailed schedule.</p></center>
+
             <br/>
             
             <!-- <div class="container"> For some reason this button's text does not act the same as the button itself and I can't figure out why. Identical to the below button as far as I know.
@@ -115,59 +115,19 @@
                 <a onclick="openWorkshop(this)" target="_blank" class="white-button">Detailed Schedule</a>
                 <iframe class="hidden" width=85% height=600px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2fcOGlP_APnGhI4m4vhd6HXXWq9xF0YjELbXJuBgz7ki42V6A3YsrqhVTYAgqtqqv323y6dTJnHMe/pubhtml?gid=760596939&single=true&widget=false&headers=false"></iframe>
             </div> -->
-            
-            <div class="container">
 
-                <span>Schedule coming soon!</span>
+        </section>
 
-                <!--<div class="sleft">-->
-                    <!--<div class="center"><h4>Friday, February 1st</h4></div>-->
-                    <!--<p><span>5:30 PM&nbsp; - </span>Check In</p>-->
-                    <!--<p><span>6:00 PM&nbsp; - </span>Opening Ceremony</p>-->
-                    <!--<p><span>7:00 PM&nbsp; - </span>Dinner</p>-->
-                    <!--<p><span>8:00 PM&nbsp; - </span>Intro to MIT AppInventor Workshop</p>-->
-                    <!--<p><span>8:00 PM&nbsp; - </span>Physics Engines in Python Workshop</p>-->
-                    <!--<p><span>8:00 PM&nbsp; - </span>Website Workshop #1</p>-->
-                    <!--<p><span>11:00 PM - </span>End of First Day</p>-->
-                <!--</div>&lt;!&ndash;-->
-                <!--&ndash;&gt;<div class="sright">-->
-                    <!--<div class="center"><h4>Saturday, February 2nd</h4></div>-->
-                    <!--<p><span>7:30 AM&nbsp; - </span>Doors Open</p>-->
-                    <!--<p><span>8:00 AM&nbsp; - </span>Breakfast</p>-->
-                    <!--<p><span>8:30 AM&nbsp; - </span>Further Explorations in MIT AppInventor Workshop</p>-->
-                    <!--<p><span>8:30 AM&nbsp; - </span>Website Workshop #2</p>-->
-                    <!--<p><span>8:30 AM&nbsp; - </span>Lighting It Up With Google Firebase Workshop</p>-->
-                    <!--<p><span>12:00 PM - </span>Lunch</p>-->
-                    <!--<p><span>1:00 PM&nbsp; - </span>Scrabble in Python</p>-->
-                    <!--<p><span>1:00 PM&nbsp; - </span>Twitterbot Workshop</p>-->
-                    <!--<p><span>1:00 PM&nbsp; - </span>Create a web app with React.js and Node</p>-->
-                    <!--<p><span>1:00 PM&nbsp; - </span>React JS Workshop</p>-->
-                    <!--<p><span>4:30 PM&nbsp; - </span>Hardware Workshop</p>-->
-                    <!--<p><span>4:30 PM&nbsp; - </span>Blockchain Basics Workshop</p>-->
-                    <!--<p><span>5:30 PM&nbsp; - </span>Dinner</p>-->
-                    <!--<p><span>9:00 PM&nbsp; - </span>Submit Projects, Judging</p>-->
-                    <!--<p><span>10:00 PM - </span>Round 2 Judging (Top 3 Projects)</p>-->
-                    <!--<p><span>10:30 PM - </span>Closing Ceremony</p>-->
-                    <!--<p><span>11:00 PM - </span>End of Event</p>-->
-                <!--</div>-->
-                
-            </div>
-            
-            <div class="container">
-                <!--<a></a> &lt;!&ndash;dummy filler element so that openWorkshop and closeWorkshop can still be used here &ndash;&gt;-->
-                <!--<a onclick="closeWorkshop(this)" target="_blank" class="white-button">Detailed Schedule</a>-->
-                <!--<iframe class="shown" width=85% height=600px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT2fcOGlP_APnGhI4m4vhd6HXXWq9xF0YjELbXJuBgz7ki42V6A3YsrqhVTYAgqtqqv323y6dTJnHMe/pubhtml?gid=760596939&single=true&widget=false&headers=false"></iframe>-->
-            </div>
+        <section class="section3">
 
-            <div id="map" class="container">
-                <h3 class="title">Event Map</h3>
+            <div id="map" class="centered">
+                <h1 style="font-size: 2.5rem; color: white;">Event Map</h1>
                 <!--<img width=100% src="https://docs.google.com/drawings/d/e/2PACX-1vQvtd9EEVFUEFSABxiQc1KMySRiCrpi_z1uSz_FRhv9xt2aUIft9t69b9tjvVgRHmT-39OSbPS7TP-O/pub?w=1440&amp;h=1080">-->
-                
             </div>
             
             
             <div class="workshops" id="workshops">
-                <h3 class="title">Workshops</h3>
+                <h3 style="font-size: 2.5rem; color: white;">Workshops</h3>
                 
                 <!--<div class="workshop card">-->
                     <!--<h3>Hardware Workshop</h3>-->
@@ -322,7 +282,7 @@
   
             </div>
             
-        </div>
+        </section>
         
         <div id="faq">
             
@@ -446,6 +406,8 @@
     
       gtag('config', 'UA-58043933-5');
     </script>
+    <script src="https://use.fontawesome.com/d0bc9af035.js"></script>
+    <script src="index.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
