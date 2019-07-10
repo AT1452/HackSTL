@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
 <html>
-
     <head>
         <title>HackSTL</title>
         <meta name="description" content="HackSTL is Schaumburg Township Library's first ever hackathon! Hackers of all ages are welcome to come compete, learn, and create for 21 hours of hacking and fun!">
@@ -10,20 +9,18 @@
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet">
+		<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
         
         <!-- From https://realfavicongenerator.net/ -->
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=Lby8NkgPMz">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=Lby8NkgPMz">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=Lby8NkgPMz">
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
         <link rel="manifest" href="/site.webmanifest?v=Lby8NkgPMz">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg?v=Lby8NkgPMz" color="#fc7c04">
 		<link rel="shortcut icon" href="/favicon.ico?v=Lby8NkgPMz">
 		<meta name="msapplication-TileColor" content="#fc7c04">
 		<meta name="theme-color" content="#fc7c04">
-        <!-- End from https://realfavicongenerator.net/ -->
-        
-        
+        <!-- End from https://realfavicongenerator.net/ --> 
     </head>
 
     <body>
@@ -32,17 +29,14 @@
 			<a href="#map">Map</a>
 			<a href="#schedule">Schedule</a>
 			<a href="./files">Workshop Files</a>
+			<a href="#contact">Contact Us</a>
 			<!--<a href="./projects">Participant Projects</a>-->
 			<!--<a href="./photos">Photos</a>-->
 		</nav>
 
         <section id="section1" class="patternbackground">
-        
             <div id="header">
                 <img id="logo" src="hack-stl-logo_white.svg">
-
-
-
                 <div class="left">
                     <div id="info">
 
@@ -102,9 +96,10 @@
         </section>
         
         <section id="schedule" class="whitebackground">
+            <h2 id="schedule-header">Schedule</h2>
             <div style="display: flex; justify-content: center;">
-                <img src="./img/HackSTLSchedule.png" />
-                <!--<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOUEaFGaT3anNAbkoC5IcJNzdslPmo5a7S6BjW3Vf4Ibwpi3SqMCiaroTvdrdlZeresyF6tOX6rdMr/pubhtml?widget=true&amp;headers=false" width="80%"></iframe>-->
+                <!--<img src="./img/HackSTLSchedule.png" />-->
+                <img class="hidden" src="https://docs.google.com/drawings/d/e/2PACX-1vQQ9oBtWvKq604tQRKmLcD8w--PucgRAU2pxmcPqehvleKiwwh4hudAHYfpMbxU5nRnw961lkkUw-yo/pub?w=1440&amp;h=1080">
             </div>
 
             <br/>
@@ -112,20 +107,18 @@
             <div class="container"> 
                 <a></a>
                 <a onclick="openWorkshop(this)" target="_blank" class="orange-button"><center>Detailed Schedule</center></a>
-                <iframe class="hidden" width=85% height=600px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOUEaFGaT3anNAbkoC5IcJNzdslPmo5a7S6BjW3Vf4Ibwpi3SqMCiaroTvdrdlZeresyF6tOX6rdMr/pubhtml?gid=760596939&single=true&widget=false&headers=false"></iframe>
+                <iframe class="shown" width=85% height=600px src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSOUEaFGaT3anNAbkoC5IcJNzdslPmo5a7S6BjW3Vf4Ibwpi3SqMCiaroTvdrdlZeresyF6tOX6rdMr/pubhtml?gid=760596939&single=true&widget=false&headers=false"></iframe>
 				<br/>
             </div>
 
         </section>
 
-        <section id="schedule" class="patternbackground">
+        <section id="map_section" class="patternbackground">
 
             <div id="map" class="container">
-                <br/>
 				<h1 style="font-size: 2.5rem; color: white;">Event Map</h1>
-				<br/>
-				<!--<center><p>Coming soon...</p></center>-->
-                <img width=80% src="https://docs.google.com/drawings/d/e/2PACX-1vRfnMJ6_nFTzHt8MST_3XC7MUnEIcUw0Vi-9MKR9eGuHYFdH85NwFX0UvdwVWzuQZa3ZheLkk3F2PP3/pub?w=1440&amp;h=1080">
+				<center><p>Coming soon...</p></center>
+                <!--<img width=80% src="https://docs.google.com/drawings/d/e/2PACX-1vRfnMJ6_nFTzHt8MST_3XC7MUnEIcUw0Vi-9MKR9eGuHYFdH85NwFX0UvdwVWzuQZa3ZheLkk3F2PP3/pub?w=1440&amp;h=1080">-->
             </div>
             
             <br/>
@@ -288,13 +281,12 @@
   
             </div>
 			
-			<br/>
+			</div>
             
         </section>
-		
-		
-        
-        <div id="faq">
+
+		<!-- TODO fix the seam here b/c thing -->
+        <div id="faq" class="patternbackground">
             
             <h2>FAQ</h2>
             
@@ -330,6 +322,7 @@
         <div class="patternbackground" id="sponsors">
             <h2>Sponsors</h2>
             <div class="inner">
+			<!--Microsoft, Twillio?, -->
 				<center><p>Coming soon...</p></center>
                 <!--<div class="stat" style="text-align: right;padding-right: 100px;">
                     <h3>110+</h3>
@@ -430,16 +423,12 @@
 				<div class="person" id="Example">
                     <!--<img class="icon" src="img/fremd.png">--> <!--Replace with college images??-->
                     <div class="info">
-                        <h3>Example Exampleson</h3>
+                        <h3>Extra PersonSlot</h3>
                         <a href="mailto:example@example.com">example@example.com</a>
                     </div>
                 </div>
 			</div>
         </div>
-
-
-
-
     </body>
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
