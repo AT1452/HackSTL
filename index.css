@@ -19,10 +19,6 @@ body {
     
 }
 
-#section2{
-    
-}
-
 #section3{
     
 }
@@ -129,7 +125,7 @@ b {
 a.white-button {
     display: block;
     text-decoration: none;
-    color: #111;
+    color: var(--page-orange);
     background-color: var(--page-white);
     padding: 10px 25px;
     border-radius: 20px;
@@ -139,7 +135,24 @@ a.white-button {
     cursor: pointer;
 }
 
-/*#header*/ a.white-button:hover { /*disable header so all a.white-buttons do this*/
+a.white-button:hover {
+    width: 300px;
+}
+
+a.orange-button {
+    display: block;
+    text-decoration: none;
+    color: var(--page-white);
+    background-color: var(--page-orange);
+    padding: 10px 25px;
+    border-radius: 20px;
+    width: 250px;
+    margin: 25px auto;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+a.orange-button:hover {
     width: 300px;
 }
 
@@ -447,8 +460,9 @@ a.button {
 }
 
 .workshop .see-more {
-    background: linear-gradient(to bottom right, var(--primary-gradient-color) 0%, var(--secondary-gradient-color) 100%);
-    color: #fefefe;
+    /*background: linear-gradient(to bottom right, var(--primary-gradient-color) 0%, var(--secondary-gradient-color) 100%);*/
+	background-color: var(--page-orange);
+    color: var(--page-white);
     text-decoration: none;
     padding: 10px 15px;
     font-size: 1rem;
