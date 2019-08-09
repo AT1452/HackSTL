@@ -23,6 +23,10 @@ body {
     
 }
 
+nav a {
+	font-size: 4vw;
+}
+
 * {
     margin: 0;
     padding: 0;
