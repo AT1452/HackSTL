@@ -459,6 +459,7 @@ a.button {
 }
 
 .person {
+	background-color: var(--page-white);
     width: 500px;
     max-width: 80vw;
     padding: 25px 20px;
