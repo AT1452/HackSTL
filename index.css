@@ -23,9 +23,17 @@ body {
     
 }
 
-nav a {
-	font-size: 2vw;
+@media only screen and (min-width: 600px) {
+	#links a {
+		font-size: 2vw;
+	}
+	
+	#award-categories a {
+		font-size: 2vw;
+	}
 }
+
+
 
 * {
     margin: 0;
@@ -475,7 +483,7 @@ a.button {
 }
 
 #award-categories a {
-	margin: 2vh;
+	margin: 2vw;
 	/*font-size: 1vh;*/
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
